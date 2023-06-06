@@ -82,6 +82,7 @@ header {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 24px;
+  overflow-x: hidden;
 }
 .main-2half-div {
   display: flex;
