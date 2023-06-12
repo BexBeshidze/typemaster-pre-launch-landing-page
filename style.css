@@ -5,7 +5,6 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  width: 100%;
 }
 .logo {
   margin: 27px 0 0 24px;
@@ -26,6 +25,11 @@ header {
   line-height: 26px;
   text-transform: uppercase;
   color: #162542;
+  cursor: pointer;
+}
+.Pre-order-now-div:hover {
+  background: #162542;
+  color: #ffffff;
 }
 .main-1half-div {
   width: 100%;
@@ -63,6 +67,9 @@ header {
   color: #ffffff;
   margin: 0 0 0 24px;
 }
+.orange-div:hover {
+  background: #ff9b62;
+}
 .release {
   font-weight: 700;
   font-size: 16px;
@@ -77,6 +84,15 @@ header {
   border-radius: 20px;
   position: relative;
   right: -21px;
+}
+.square {
+  display: none;
+}
+.tablet-keyboard {
+  display: none;
+}
+.desktop-keyboard {
+  display: none;
 }
 .keyboard-div {
   display: flex;
@@ -93,13 +109,28 @@ header {
   justify-content: space-between;
   margin-bottom: 75px;
 }
+.rectangle-div {
+  display: none;
+}
 .phonekey {
   width: 129px;
   height: 193px;
-  background: #f16718;
+  background-image: linear-gradient(
+      rgba(241, 103, 24, 0.6),
+      rgba(241, 103, 24, 0.6)
+    ),
+    url(./assets/mobile/image-phone-and-keyboard.jpg);
+  background-position: center;
+  background-size: cover;
   border-radius: 20px;
   position: relative;
   left: -22px;
+}
+.tablet-phonekey {
+  display: none;
+}
+.desktop-phonekey {
+  display: none;
 }
 .glasskey {
   width: 220px;
@@ -107,6 +138,12 @@ header {
   background: #d8d8d8;
   border-radius: 20px;
   margin-right: 24px;
+}
+.tablet-glasskey {
+  display: none;
+}
+.desktop-glasskey {
+  display: none;
 }
 .text-div {
   display: flex;
@@ -182,4 +219,247 @@ footer {
   line-height: 26px;
   color: #7b8bad;
   margin: 32px 0 43px 0;
+}
+@media only screen and (min-width: 768px) {
+  .logo {
+    margin: 49px 0 0 39px;
+  }
+  .Pre-order-now-div {
+    margin: 40px 40px 62px 0;
+    width: 175px;
+    height: 58px;
+  }
+  .main-1half-div {
+    flex-direction: row;
+  }
+  .typemaster {
+    margin: 60px 69px 34px 39px;
+  }
+  .main-1p {
+    margin: 0 69px 39px 39px;
+  }
+  .orange-div {
+    margin: 0 37px 0px 39px;
+  }
+  .release {
+    margin: 11px 69px 0 0;
+  }
+  .keyboard {
+    display: none;
+  }
+  .keyboard-div {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .tablet-keyboard {
+    display: block;
+    width: 551px;
+    height: 425px;
+    border-radius: 20px;
+    position: relative;
+    right: -157px;
+  }
+  .order-release-div {
+    margin-bottom: 100px;
+  }
+  .image-div {
+    margin-bottom: 72px;
+  }
+  .phonekey {
+    display: none;
+  }
+  .tablet-phonekey {
+    background-image: linear-gradient(
+        rgba(241, 103, 24, 0.6),
+        rgba(241, 103, 24, 0.6)
+      ),
+      url(./assets/tablet/image-phone-and-keyboard.jpg);
+    background-position: center;
+    background-size: cover;
+    display: block;
+    width: 214px;
+    height: 320px;
+    border-radius: 20px;
+    margin-left: 39px;
+  }
+  .glasskey {
+    display: none;
+  }
+  .tablet-glasskey {
+    display: block;
+    width: 445px;
+    height: 320px;
+    border-radius: 20px;
+    margin-right: 40px;
+  }
+  .text-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 142px;
+  }
+  .text-div-h2 {
+    text-align: start;
+    margin: 0 95px 0 39px;
+  }
+  .text-div-p {
+    text-align: start;
+    margin: 15px 40px 0 0;
+  }
+  .above-two-divs {
+    display: flex;
+    flex-direction: row;
+    margin: 0 29px 0 39px;
+  }
+  .below-two-divs {
+    display: flex;
+    flex-direction: row;
+    margin: 0 29px 0 39px;
+  }
+  .four-divs {
+    align-items: flex-start;
+  }
+  .div-p {
+    text-align: start;
+    margin: 0 0 64px 0;
+  }
+  .svg {
+    margin: 0 285px 40px 0;
+  }
+  .div-heads {
+    text-align: start;
+  }
+  .div-p {
+    margin-right: 69px;
+  }
+  footer {
+    margin: 70px 0 43px 0;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .logo {
+    margin: 64px 0 0 165px;
+  }
+  .Pre-order-now-div {
+    margin: 55px 165px 83px 0;
+  }
+  .typemaster {
+    margin: 69px 125px 24px 165px;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 56px;
+  }
+  .main-1p {
+    margin: 0 125px 40px 165px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .order-release-div {
+    margin-bottom: 138px;
+  }
+  .release {
+    margin: 0 213px 0 0;
+  }
+  .tablet-keyboard {
+    display: none;
+  }
+  .desktop-keyboard {
+    display: block;
+    width: 540px;
+    height: 480px;
+    border-radius: 20px;
+    position: relative;
+    left: 15px;
+  }
+  .keyboard-div {
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 0 30px 0;
+  }
+  .square-div {
+    width: 135px;
+    height: 240px;
+    border-radius: 20px 0 0 20px;
+    background: #e8eff2;
+  }
+  .orange-div {
+    margin: 0 40px 0 165px;
+  }
+  .image-div {
+    width: 100%;
+  }
+  .rectangle-div {
+    display: block;
+    width: 135px;
+    height: 236px;
+    border-radius: 0 20px 20px 0;
+    background: #e8eff2;
+    margin-right: 30px;
+    position: relative;
+    top: 244px;
+  }
+  .main-2half-div {
+    flex-direction: row;
+    margin-bottom: 96px;
+  }
+  .tablet-phonekey {
+    display: none;
+  }
+  .desktop-phonekey {
+    display: block;
+    width: 255px;
+    height: 480px;
+    background-image: linear-gradient(
+        rgba(241, 103, 24, 0.6),
+        rgba(241, 103, 24, 0.6)
+      ),
+      url(./assets/mobile/image-phone-and-keyboard.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+  }
+  .tablet-glasskey {
+    display: none;
+  }
+  .desktop-glasskey {
+    display: block;
+    width: 445px;
+    height: 480px;
+    border-radius: 20px;
+    margin-left: 30px;
+  }
+  .text-div {
+    justify-content: normal;
+    flex-direction: column;
+  }
+  .text-div-h2 {
+    margin: 112px 165px 27px 125px;
+  }
+  .text-div-p {
+    margin: 0 164px 0 125px;
+  }
+  .main-divs {
+    flex-direction: row;
+  }
+  .margin-div {
+    margin-left: 165px;
+  }
+  .above-two-divs {
+    margin: 0 0 0 165px;
+  }
+  .below-two-divs {
+    margin: 0 165px 0 0;
+  }
+  .svg {
+    margin: 0 220px 48px 0;
+  }
+  .div-heads {
+    margin: 0 0 24px 0;
+  }
+  .div-p {
+    margin: 0 30px 58px 0;
+  }
+  footer {
+    margin: 70px 0 39px 0;
+  }
 }
